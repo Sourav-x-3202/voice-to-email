@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Contacts</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="glass-card login-form">
+        <h2>📇 Manage Contacts</h2>
+
+        <form id="contactForm">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <button type="submit">Add Contact</button>
+        </form>
+
+        <div id="contactList" class="contact-list"></div>
+
+        <div class="options bottom-margin">
+          <a href="/">⬅ Back to Email</a>
+          <a href="/logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      async function loadContacts() {
+        const res = await fetch("/get-contacts");
+        const contacts = await res.json();
+        const list = document.getElementById("contactList");
+        list.innerHTML = "";
+        Object.entries(contacts).forEach(([name, email]) => {
+          const div = document.createElement("div");
+          div.className = "contact-item";
+          div.innerHTML = `<span><strong>${name}</strong>: ${email}</span>
+                         <button onclick="deleteContact('${name}')">❌</button>`;
+          list.appendChild(div);
+        });
+      }
+
+      async function deleteContact(name) {
+        await fetch("/delete-contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name }),
+        });
+        loadContacts();
+      }
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const name = document
+            .getElementById("name")
+            .value.trim()
+            .toLowerCase();
+          const email = document.getElementById("email").value.trim();
+          if (!name || !email) return;
+          await fetch("/add-contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, email }),
+          });
+          e.target.reset();
+          loadContacts();
+        });
+
+      window.onload = loadContacts;
+    </script>
+  </body>
+</html>

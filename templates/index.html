@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice Email Sender</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="glass-card login-form">
+        <h2>📧 Voice Email Sender</h2>
+
+        <div class="input-group">
+          <label for="gmail">Your Gmail</label>
+          <input type="email" id="gmail" placeholder="your@gmail.com" />
+        </div>
+
+        <div class="input-group">
+          <label for="password">App Password</label>
+          <input type="password" id="password" placeholder="App password" />
+        </div>
+
+        <div class="input-group">
+          <label for="recipient">Recipient Email</label>
+          <input type="text" id="recipient" />
+        </div>
+
+        <div class="input-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" />
+        </div>
+
+        <div class="input-group">
+          <label for="body">Message</label>
+          <textarea id="body" rows="5"></textarea>
+        </div>
+
+        <div class="options">
+          <a href="/contacts">Manage Contacts</a>
+          <a href="/logout">Logout</a>
+        </div>
+
+        <div class="input-group">
+          <button id="mic-toggle">🎤 Start Voice</button>
+          <button id="sendBtn">Send</button>
+        </div>
+
+        <span id="status"></span>
+      </div>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
