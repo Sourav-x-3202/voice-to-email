@@ -27,17 +27,7 @@ Whether you're visually impaired, on-the-go, or just want to try futuristic inte
 | Local-Only App     | All logic runs locally in your browser and server — no cloud APIs involved |
 | Beautiful UI        | Modern, glass-style responsive interface built with HTML/CSS/JS             |
 
----
 
-##  Screenshot
-
-<img width="549" height="445" alt="Screenshot 2025-07-23 142505" src="https://github.com/user-attachments/assets/2719f4bd-c0a4-4df9-9f13-09f650b8a3e8" />
-
-
-<img width="571" height="468" alt="Screenshot 2025-07-23 142426" src="https://github.com/user-attachments/assets/a8e0dc7c-ee01-461a-82ba-5db70d996a61" />
-
-
-<img width="606" height="588" alt="Screenshot 2025-07-23 142301" src="https://github.com/user-attachments/assets/244ec39d-00f1-42fc-a2c6-e13dd62f69fc" />
 
 
 ##  Tech Stack
@@ -87,6 +77,7 @@ To use this app:
 ---
 
 ##  Folder Structure
+```
 folder_structure: |
   voice-to-email/
   ├── app.py               # Flask backend
@@ -103,30 +94,41 @@ folder_structure: |
   └── static/              # Frontend assets
       ├── style.css        # App styling
       └── script.js        # Voice command logic
-
+```
 
 ---
 
 ##  Getting Started (Run Locally)
 
 bash
-# 1. Clone the repo
+## 1. Clone the repo
+```
 git clone https://github.com/yourid/voice-to-email.git
 cd voice-to-email
-
-# 2. Create a virtual environment (optional)
+```
+## 2. Create a virtual environment (optional)
+```
 python -m venv venv
 venv\Scripts\activate  # on Windows
-
-# 3. Install dependencies
+```
+## 3. Install dependencies
+```
 pip install -r requirements.txt
-
-# 4. Run the app
+```
+## 4. Run the app
+```
 python app.py
+```
 
-# 5. Open in browser
+## 5. Open in browser
+```
 http://127.0.0.1:5000
-Example Use Case
+```
+##  Screenshot
+<img width="1365" height="719" alt="Screenshot 2025-07-23 165609" src="https://github.com/user-attachments/assets/3a5dd08e-50b9-4205-8de4-8ba37ce4c66d" />
+
+
+## Example Use Case
 You're on your laptop, cooking with your hands full, and you suddenly remember to email your friend:
 
 You open the app, press the mic, and say:
@@ -139,24 +141,37 @@ You open the app, press the mic, and say:
 
 “Send email”
 
- Boom. Email sent — without typing a single letter.
+ Boom!!! Email sent — without typing a single letter.
+ 
+ ---
 
- Future Improvements (Ideas)
- Dark mode toggle
+##  Screenshot
 
- ChatGPT integration for smarter responses
+<img width="549" height="445" alt="Screenshot 2025-07-23 142505" src="https://github.com/user-attachments/assets/2719f4bd-c0a4-4df9-9f13-09f650b8a3e8" />
 
- Message history
 
- View inbox (read-only)
+<img width="571" height="468" alt="Screenshot 2025-07-23 142426" src="https://github.com/user-attachments/assets/a8e0dc7c-ee01-461a-82ba-5db70d996a61" />
 
- Convert to mobile PWA (installable)
 
- Contributing
+<img width="606" height="588" alt="Screenshot 2025-07-23 142301" src="https://github.com/user-attachments/assets/244ec39d-00f1-42fc-a2c6-e13dd62f69fc" />
+
+## Future Improvements (Ideas)
+ 1.Dark mode toggle
+ 
+ 2.ChatGPT integration for smarter responses
+ 
+ 3.Message history
+ 
+ 4.View inbox (read-only)
+ 
+ 5.Convert to mobile PWA (installable)
+ 
+
+## Contributing
 Pull requests are welcome! If you'd like to suggest new features or improve existing ones, feel free to fork and open an issue or PR.
 
 
- Author
+## Author
 Made with by Sourav Sharma
 
  “I built this as a personal tool and project to explore voice-driven UIs — and now it's yours to use too.”
