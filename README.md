@@ -87,22 +87,22 @@ To use this app:
 ---
 
 ##  Folder Structure
+folder_structure: |
+  voice-to-email/
+  ├── app.py               # Flask backend
+  ├── contacts.json        # Stores user contacts locally
+  ├── requirements.txt     # Python dependencies
+  ├── README.md            # Project documentation
+  ├── screenshot.png       # UI preview screenshot
 
-voice-to-email/
-├── app.py # Flask backend
-├── contacts.json # Stores user contacts locally
-├── requirements.txt # Python dependencies
-├── README.md # This file
-├── screenshot.png # App screenshot
-│
-├── templates/ # HTML files
-│ ├── login.html
-│ ├── index.html
-│ └── contacts.html
-│
-└── static/ # CSS and JS files
-├── style.css
-└── script.js
+  ├── templates/           # HTML templates
+  │   ├── login.html
+  │   ├── index.html
+  │   └── contacts.html
+
+  └── static/              # Frontend assets
+      ├── style.css        # App styling
+      └── script.js        # Voice command logic
 
 
 ---
