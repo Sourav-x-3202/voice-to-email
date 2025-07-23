@@ -17,7 +17,7 @@ Whether you're visually impaired, on-the-go, or just want to try futuristic inte
 
 ---
 
-## 🔧 Key Features
+##  Key Features
 
 | Feature               | Description                                                                 |
 |-----------------------|-----------------------------------------------------------------------------|
@@ -31,8 +31,16 @@ Whether you're visually impaired, on-the-go, or just want to try futuristic inte
 
 ##  Screenshot
 
+<img width="549" height="445" alt="Screenshot 2025-07-23 142505" src="https://github.com/user-attachments/assets/2719f4bd-c0a4-4df9-9f13-09f650b8a3e8" />
 
-## 🛠️ Tech Stack
+
+<img width="571" height="468" alt="Screenshot 2025-07-23 142426" src="https://github.com/user-attachments/assets/a8e0dc7c-ee01-461a-82ba-5db70d996a61" />
+
+
+<img width="606" height="588" alt="Screenshot 2025-07-23 142301" src="https://github.com/user-attachments/assets/244ec39d-00f1-42fc-a2c6-e13dd62f69fc" />
+
+
+##  Tech Stack
 
 | Layer       | Technology                        |
 |-------------|-----------------------------------|
@@ -43,7 +51,7 @@ Whether you're visually impaired, on-the-go, or just want to try futuristic inte
 
 ---
 
-## 🚀 How It Works
+##  How It Works
 
 1. You speak your command: e.g.  
    - “Recipient Mohit”  
@@ -99,7 +107,7 @@ voice-to-email/
 
 ---
 
-## 🧑‍💻 Getting Started (Run Locally)
+##  Getting Started (Run Locally)
 
 bash
 # 1. Clone the repo
@@ -147,9 +155,6 @@ You open the app, press the mic, and say:
  Contributing
 Pull requests are welcome! If you'd like to suggest new features or improve existing ones, feel free to fork and open an issue or PR.
 
-📄 License
-This project is licensed under the MIT License.
-Feel free to use, modify, and share.
 
  Author
 Made with by Sourav Sharma
